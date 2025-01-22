@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Transcript Digest</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .video {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .summary, .pull-quotes, .cards, .paragraph-summary, .page-summary, .chapters, .metadata {
+            margin-bottom: 20px;
+        }
+        .cards {
+            display: flex;
+            justify-content: space-between;
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            width: 30%;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        .chapters ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .chapters li {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="video">
+        <iframe id="video-embed" width="560" height="315"
+                src="https://www.youtube.com/embed/{{videoId}}"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+    </div>
+    <div class="metadata">
+        <h2>Video Metadata</h2>
+        <p><strong>Title:</strong> {{title}}</p>
+        <p><strong>Author:</strong> {{author}}</p>
+        <p><strong>Duration:</strong> {{duration}}</p>
+        <p><strong>Date Published:</strong> {{datePublished}}</p>
+        <p><strong>Date Fetched:</strong> {{dateFetched}}</p>
+    </div>
+    <div class="summary">
+        <h2>One-Sentence Summary</h2>
+        <p>{{sentenceSummary}}</p>
+    </div>
+    <div class="chapters">
+        <h2>Chapters</h2>
+        <ul>{{chapters}}</ul>
+    </div>
+    <div class="pull-quotes">
+        <h2>Pull Quotes</h2>
+        <ul>{{pullQuotes}}</ul>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <h3>Topics</h3>
+            <ul>{{topics}}</ul>
+        </div>
+        <div class="card">
+            <h3>Keywords</h3>
+            <ul>{{keywords}}</ul>
+        </div>
+        <div class="card">
+            <h3>Concepts</h3>
+            <ul>{{concepts}}</ul>
+        </div>
+    </div>
+    <div class="paragraph-summary">
+        <h2>Paragraph Summary</h2>
+        <p>{{paragraphSummary}}</p>
+    </div>
+    <div class="page-summary">
+        <h2>Page Summary</h2>
+        <p>{{pageSummary}}</p>
+    </div>
+</div>
+</body>
+</html>

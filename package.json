@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "marked": "^15.0.6",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.78.1",
+    "process": "^0.11.10",
+    "zod": "^3.24.1"
+  },
+  "scripts": {
+    "start": "node digest_youtube_transcript.js"
+  }
+}
