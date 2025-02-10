@@ -218,7 +218,7 @@ async function digestYoutubeTranscript(urlOrID) {
     console.log("Extracting transcript text...");
     const transcriptText = await extractTranscriptText(transcriptObject);
     console.log("  Transcript text extracted.");
-    console.log(transcriptText.slice(0,100));
+    console.log(transcriptText.slice(0,300));
 
     console.log("Cleaning transcript text...");
     const cleanedTranscript = await cleanTranscript(transcriptText, transcriptObject.metadata);
@@ -272,8 +272,17 @@ async function main() {
     // const url = 'https://www.youtube.com/watch?v=1iILtZuj3Yw'; // Replace with the desired YouTube URL
     // const url = 'https://www.youtube.com/watch?v=59Etzj5gvsE'
     // const url = 'https://www.youtube.com/watch?v=XALBGkjkUPQ';
-    const url = 'https://www.youtube.com/watch?v=-2k1rcRzsLA'
-    // const url = 'https://youtu.be/g7qQYDFvypk?si=2k9RBnYTARJLREA_'
+    // const url = 'https://www.youtube.com/watch?v=-2k1rcRzsLA'
+    // const url = 'https://youtu.be/VfSQ43VBG28'
+    // const url = 'https://www.youtube.com/watch?v=VfSQ43VBG28' // HMN24 - 01 - Intro to Data Collection
+    // const url = 'https://www.youtube.com/watch?v=iROSFpum15A' // HMN24 - 03 - Intro to Balance (Center of Mass vs Base of Support)
+    // const url = 'https://www.youtube.com/watch?v=ezeMpNFrZ4c' // HMN25 - 2025-01-29 lecture
+    // const url = 'https://www.youtube.com/watch?v=T2CxbB5DrAs' // HMN25 -  2025-01-27_14_59.mp4
+    const url = 'https://www.youtube.com/watch?v=hCSj2z25rJ8' // HMN25 -  2025-02-03_14_57.mp4
+
+
+    // INSERT YT ID INTO `youtube-fetcher.js` !!!!
+
 
     const videoID = extractYoutubeId(url)
 

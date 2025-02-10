@@ -87,7 +87,7 @@ export { YoutubeTranscript, YoutubeTranscriptError };
 
 async function main() {
     try {
-        const result = await YoutubeTranscript.fetchTranscript('59Etzj5gvsE');
+        const result = await YoutubeTranscript.fetchTranscript('hCSj2z25rJ8');
         console.log(result);
     } catch (error) {
         console.error(error.message);
