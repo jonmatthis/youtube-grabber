@@ -8,6 +8,21 @@ import {fileURLToPath} from 'url';
 import {zodResponseFormat} from "openai/helpers/zod";
 import {z} from "zod";
 
+
+
+
+import ytdl from "ytdl-core"
+
+ytdl('http://www.youtube.com/watch?v=aqz-KE-bpKQ')
+  .pipe(fs.createWriteStream('video.mp4'));
+
+
+
+
+
+
+
+
 dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
