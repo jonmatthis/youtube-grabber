@@ -10,19 +10,6 @@ import {z} from "zod";
 
 
 
-
-import ytdl from "ytdl-core"
-
-ytdl('http://www.youtube.com/watch?v=aqz-KE-bpKQ')
-  .pipe(fs.createWriteStream('video.mp4'));
-
-
-
-
-
-
-
-
 dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
@@ -293,8 +280,9 @@ async function main() {
     // const url = 'https://www.youtube.com/watch?v=iROSFpum15A' // HMN24 - 03 - Intro to Balance (Center of Mass vs Base of Support)
     // const url = 'https://www.youtube.com/watch?v=ezeMpNFrZ4c' // HMN25 - 2025-01-29 lecture
     // const url = 'https://www.youtube.com/watch?v=T2CxbB5DrAs' // HMN25 -  2025-01-27_14_59.mp4
-    const url = 'https://www.youtube.com/watch?v=hCSj2z25rJ8' // HMN25 -  2025-02-03_14_57.mp4
-
+    // const url = 'https://www.youtube.com/watch?v=hCSj2z25rJ8' // HMN25 -  2025-02-03_14_57.mp4
+    // const url = 'https://www.youtube.com/watch?v=BNCl8gE09rY' // HMN25 -  2025-02-05_14_57.mp4
+    const url = 'https://www.youtube.com/watch?v=cCBAkRfW8j8' // HMN25 -  2025 02 10 15 00.mp4
 
     // INSERT YT ID INTO `youtube-fetcher.js` !!!!
 
